@@ -24,3 +24,15 @@ img {
 .navbar .nav-link:hover {
   color: blue;
 }
+/* este es el estilo para el botón de ir arriba */
+#btn-arriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
