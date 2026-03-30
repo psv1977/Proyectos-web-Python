@@ -6,10 +6,10 @@
         <title>Ejercicio_2</title>
         
         <!-- Esta es la llamada al Bootstrap via CDN de la leccion 2 PREGUNTA 1-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
          <!-- Esta es la conexión al css externo, donde se encuentran los estilos personalizados para el ejercicio. PREGUNTA 1 -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="ASSETS/CSS/style.css">
     </head>
     <body>
         <!-- Header es el encabezado de la página, donde se muestra el título del ejercicio. -->
@@ -17,10 +17,10 @@
         <header>            
             <!--En esta sección se muestra un contenedor con el titulo de la página, 
             además de los enlaces ficticios  PREGUNTA 3-->
-            <nav class="navbar navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
                 <div class="container">
 
-                    <h1 class="text-danger">Ejercicio de la lección 4 aplicando Bootstrap</h1>
+                    <h1 class="text-danger">Ejercicio de la lección 4 aplicando Bootstrap actualizado a la lección 5 con JavaScript</h1>
 
                     <ul class="navbar-nav ms-auto d-block d-lg-flex">
                     <li class="nav-item me-3">
@@ -70,10 +70,10 @@
                     </ol>
                 </aside>
                 <!-- En esta sección se muestra la foto de la cual se hará la descripción. -->
-                <img src="C:\Users\PatricioSaavedra\OneDrive - Ingeniería y Mantenimiento SL SpA\python\curso desarrollo fulstack python\EJERCICIO2-3_LECCION2\IMG\DSC04005.JPG" 
-                     class="d-block mx-auto"
-                     style="width: 400px; height: 300px; object-fit: cover;"
-                     alt="Copihue">
+                <img src="ASSETS/IMG/DSC04005.JPG" 
+                    class="d-block mx-auto" 
+                    style="width: 400px; height: 300px; object-fit: cover;" 
+                    alt="Copihue">
                 
                 <!-- En esta sección se muestra la descripción de la foto. -->
                 
@@ -92,7 +92,7 @@
 
                 <!-- En esta sección se muestra el botón para ver más información -->
                 <div class="text-center mt-3">
-                    <button class="btn btn-primary">
+                    <button id="btn-info" class="btn llamativo">
                         Ver más información
                     </button>
                 </div>
@@ -102,9 +102,9 @@
                 </div>
         </main> 
                 <!-- Ponlo al final, antes de cerrar el </body> -->
-        <button 
-            id="btn-arriba" title="Ir arriba">↑
+        <button id="ir-arriba" title="Volver arriba">
+                &#8593; 
         </button>
-        <script src="script.js"></script>    
+        <script src="ASSETS/JS/scripts.js"></script>    
     </body>
 </html>

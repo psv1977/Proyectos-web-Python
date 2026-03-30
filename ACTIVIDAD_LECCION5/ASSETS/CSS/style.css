@@ -1,0 +1,80 @@
+body {
+    /* esta la parte del ejercicio 2 leccion 3 */
+     background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+/* esta la parte del ejercicio 3 leccion 3 */
+h1, h2, h3 {
+  color: red;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* esta la parte del ejercicio 4 leccion 3 */
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+/* este es el estilo para los enlaces del menú de navegación al pasar el mouse por encima */
+.navbar .nav-link:hover {
+  color: blue;
+}
+/* ESTILOS COMPARTIDOS PARA AMBOS BOTONES LLAMATIVOS */
+#ir-arriba,
+.btn-llamativo {
+    /* FONDO: Degradado moderno (Rojo-Naranja vibrante) */
+    background: linear-gradient(135deg, #ff4d4d 0%, #ff8c1a 100%);
+    
+    /* TEXTO: Tipografía y Color */
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid white; /* Borde blanco para separarlo */
+    
+    /* SOMBRA: Efecto 3D (Elevación) */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    
+    /* Animaciones y Estados */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Transición suave */
+    text-decoration: none; /* Por si acaso es un enlace <a> */
+}
+
+/* Efecto al pasar el mouse (Hover) Compartido */
+#ir-arriba:hover,
+.btn-llamativo:hover {
+    /* Cambiamos ligeramente el degradado */
+    background: linear-gradient(135deg, #cc0000 0%, #e67300 100%);
+    
+    /* Efecto de "levitación" */
+    transform: translateY(-5px) scale(1.05); 
+    
+    /* Sombra más intensa */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL BOTÓN DE INFORMACIÓN (El del medio) */
+.btn-llamativo {
+    padding: 12px 24px; /* Un poco de aire alrededor del texto */
+    border-radius: 30px; /* Bordes muy redondeados (Píldora) */
+    font-size: 16px;
+    display: inline-block; /* Para que se comporte como un botón normal */
+}
+
+/* ESTILOS ESPECÍFICOS PARA EL BOTÓN FLOTANTE (Ir Arriba) */
+#ir-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Perfectamente circular */
+    font-size: 28px; /* Flecha más grande */
+    display: none; /* Empieza oculto (se activa con JS) */
+}
