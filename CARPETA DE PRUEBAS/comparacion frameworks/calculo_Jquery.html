@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cálculo con jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Calculadora de Ahorro hídrico</h2>
+    <p>Costo actual de la cuenta ($): 
+       <input type="number" id="costo" placeholder="Ej: 50000">
+    </p>
+    <button id="btnCalcular">Calcular 15% de Ahorro</button>
+    
+    <h3 id="resultado">El ahorro será de: $0</h3>
+
+    <script>
+        $(document).ready(function() {
+            $('#btnCalcular').click(function() {
+                // Obtenemos el valor y calculamos directamente
+                let valor = parseFloat($('#costo').val());
+                
+                if (!$.isNumeric(valor)) {
+                    alert("Ingresa un número");
+                    return;
+                }
+
+                let ahorro = valor * 0.15;
+                
+                // Actualizamos el texto con el resultado
+                $('#resultado').text("El ahorro será de: $" + ahorro.toLocaleString('es-CL'));
+            });
+        });
+    </script>
+</body>
+</html>

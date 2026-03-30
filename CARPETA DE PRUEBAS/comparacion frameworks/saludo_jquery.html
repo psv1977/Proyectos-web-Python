@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2 id="titulo">Hola, Patricio</h2>
+    <button id="miBoton">Haz clic aquí</button>
+
+    <script>
+        $(document).ready(function() {
+            // Usamos el selector de $ para manejar el clic y el cambio de texto
+            $('#miBoton').click(function() {
+                $('#titulo').text("¡Texto cambiado con jQuery!").css("color", "red");
+            });
+        });
+    </script>
+
+</body>
+</html>
