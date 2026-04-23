@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio_2</title>
+        
+        <!-- Esta es la llamada al Bootstrap via CDN de la leccion 2 PREGUNTA 1-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+         <!-- Esta es la conexión al css externo, donde se encuentran los estilos personalizados para el ejercicio. PREGUNTA 1 -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Header es el encabezado de la página, donde se muestra el título del ejercicio. -->
+        
+        <header>            
+            <!--En esta sección se muestra un contenedor con el titulo de la página, 
+            además de los enlaces ficticios  PREGUNTA 3-->
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+
+                    <h1 class="text-danger">Ejercicio de la lección 4 aplicando Bootstrap</h1>
+
+                    <ul class="navbar-nav ms-auto d-block d-lg-flex">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ejercicio 3</a>
+                    </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="text-center my-4">
+                <div class="container text-center">
+                    <h1 class="display-4 fw-bold">
+                        Bienvenidos al Ejercicio de la lección 4
+                    </h1>
+                    <p class="lead mt-3">
+                        En este ejercicio aplicaremos los conceptos aprendidos en la lección 4, utilizando Bootstrap para mejorar el diseño y la estructura de nuestra página web.
+                    </p>
+                </div>
+            </section>
+        
+                
+            <!-- En esta sección se muestra el contenido del ejercicio, que incluye el propósito, un saludo, las instrucciones, la foto y su descripción con 
+             sus respectivas alineaciones y márgenes. PREGUNTA 2-->
+            <div class="container">
+                <h2>Esto viene del ejercicio 2</h2>
+                <!--En esta sección muestra el propósito del ejercicio.  -->
+                <p>Este es un programa de prueba del curso fullstack Python, en donde estamos aprendiendo lo básico del HTML5</p>
+                <!-- en esta parte, se mnuestra un saludo de bienvenida -->
+            <section>
+                    <h2> Saludo</h2>
+                    <p > Bienvenido/a al curso fullstack Python</p>
+                
+                </section>
+                <!-- En esta sección se muestran las instrucciones para ejecutar el ejercicio. -->
+                <aside>
+                    <h2>Responde algunas preguntas </h2>
+                    <ol>
+                        <li>¿Cual es el nombre cientifico de el copihue?</li>
+                        <li>¿Desde  cuándo es la flor nacional?</li>
+                        <li>¿a qué personaje de la histaria le corresponde el nombre científico?</li>
+                    </ol>
+                </aside>
+                <!-- En esta sección se muestra la foto de la cual se hará la descripción. -->
+                <img src="C:\Users\PatricioSaavedra\proyectos-python\EJERCICIO_LECCION4\ASSETS\IMG\DSC04005.JPG" 
+                     class="d-block mx-auto"
+                     style="width: 400px; height: 300px; object-fit: cover;"
+                     alt="Copihue">
+                
+                <!-- En esta sección se muestra la descripción de la foto. -->
+                
+                <p> 
+                El copihue (Lapageria rosea) es una de las plantas más emblemáticas de Chile.   Es una enredadera trepadora nativa del bosque templado chileno,
+                especialmente abundante entre las regiones del Maule y Los Lagos. Fue declarada flor nacional de Chile en 1977.
+                Su nombre científico Lapageria rosea fue dado en honor a Joséphine de Beauharnais, esposa de Napoleón Bonaparte, cuyo apellido de soltera era 
+                La Pagerie. Era una apasionada de la botánica.
+                </p>
+                
+                <!-- En esta sección se muestra una nota explicativa de como se ajustó la imagen PREGUNTA 5.c-->
+                <p class="mt-3 text-muted">
+                    <strong>Nota:</strong> La imagen original no tenía proporción 4:3. Se utilizó "object-fit: cover" para ajustarla a 400x300 px 
+                    sin deformarla, recortando los bordes cuando fue necesario.
+                </p>
+
+                <!-- En esta sección se muestra el botón para ver más información -->
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary">
+                        Ver más información
+                    </button>
+                </div>
+                <!-- En esta sección se muestra la alerta que el sitio esté funcionando correctamente -->    
+                <div class="alert alert-success mt-3">
+                    Sitio funcionando correctamente.
+                </div>
+        </main>    
+    </body>
+</html>

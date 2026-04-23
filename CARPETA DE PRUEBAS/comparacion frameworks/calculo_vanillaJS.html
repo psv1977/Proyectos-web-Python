@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cálculo con Vanilla JS</title>
+</head>
+<body>
+    <h2>Calculadora de Ahorro hídrico</h2>
+    <p>Costo actual de la cuenta ($): 
+       <input type="number" id="costo" placeholder="Ej: 50000">
+    </p>
+    <button id="btnCalcular">Calcular 15% de Ahorro</button>
+    
+    <h3 id="resultado">El ahorro será de: $0</h3>
+
+    <script>
+        const boton = document.getElementById('btnCalcular');
+        const inputCosto = document.getElementById('costo');
+        const displayResultado = document.getElementById('resultado');
+
+        boton.addEventListener('click', function() {
+            // 1. Capturamos el valor y lo convertimos a número flotante (decimal)
+            const valor = parseFloat(inputCosto.value);
+            
+            // 2. Realizamos la operación matemática
+            if (!isNaN(valor)) {
+                const ahorro = valor * 0.15;
+                // 3. Mostramos el resultado usando template literals (las comillas invertidas ``)
+                displayResultado.innerText = `El ahorro será de: $${ahorro.toLocaleString('es-CL')}`;
+            } else {
+                alert("Por favor, ingresa un número válido");
+            }
+        });
+    </script>
+</body>
+</html>

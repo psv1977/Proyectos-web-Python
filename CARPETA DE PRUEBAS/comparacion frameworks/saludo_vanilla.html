@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo Vanilla JS</title>
+</head>
+<body>
+
+    <h2 id="titulo">Hola, Patricio</h2>
+    <button id="miBoton">Haz clic aquí</button>
+
+    <script>
+        // Seleccionamos los elementos del DOM
+        const boton = document.getElementById('miBoton');
+        const titulo = document.getElementById('titulo');
+
+        // Agregamos el evento de escucha
+        boton.addEventListener('click', function() {
+            titulo.innerText = "¡Texto cambiado con JS puro!";
+            titulo.style.color = "blue";
+        });
+    </script>
+
+</body>
+</html>
