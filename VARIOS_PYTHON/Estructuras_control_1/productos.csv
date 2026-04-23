@@ -1,0 +1,9 @@
+Producto,Precio,Categoria
+leche,1050,alimenticio
+pan,3600,alimenticio
+celular,250000,electrónico
+laptop,700000,electrónico
+tabaco,10000,nocivo
+alcohol,2000,nocivo
+libro,15000,otro
+ropa,5000,otro
